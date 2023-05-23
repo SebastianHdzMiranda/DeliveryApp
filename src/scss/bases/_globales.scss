@@ -19,7 +19,7 @@ p {
 }
 .contenedor {
     width: 95%;
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -30,6 +30,7 @@ a {
 img {
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
 h1, h2, h3 {

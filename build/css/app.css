@@ -28,7 +28,7 @@ p {
 
 .contenedor {
   width: 95%;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -39,6 +39,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 h1, h2, h3 {
@@ -55,5 +56,69 @@ h2 {
 
 h3 {
   font-size: 3.2rem;
+}
+
+/* Header 
+----------------------------------------------------------*/
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  width: 30rem;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .navegacion {
+    width: auto;
+    flex-direction: row;
+    margin-top: unset;
+  }
+}
+.navegacion__link {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  display: block;
+}
+.navegacion__link--registrar {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.navegacion__link--registrar:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .navegacion__link--registrar {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=app.css.map */
