@@ -14,7 +14,9 @@
 <body>
     <header class="header contenedor">
         <div class="header__logo">
-            <img src="build/img/logo.svg" alt="logo" width="500" height="300">
+            <h1 class="header__heading">
+                <img src="build/img/logo.svg" alt="logo" width="500" height="300">
+            </h1>
         </div>
 
         <div class="navegacion">
@@ -23,6 +25,30 @@
             <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurant</a>
         </div>
     </header>
-    
+
+    <section class="formulario contenedor">
+
+        <div class="formulario__contenido">
+            <h2 class="formulario__heading">Encuentra y Pide comida de tu restaurante favorito</h2>
+            <form class="formulario__buscar">
+                <div class="formulario__campo">
+                    <label class="formulario__label" for="restaurante">Restaurant</label>
+                    <input class="formulario__input" type="text" placeholder="Tacos México">
+                </div>
+                <div class="formulario__campo">
+                    <label class="formulario__label" for="Platillo">Platillo</label>
+                    <input class="formulario__input" type="text" placeholder="Pizza, Ensalada, Hamburguesa">
+                </div>
+
+                <input class="formulario__boton" type="submit" value="Buscar">
+            </form>
+        </div>
+
+        <div class="formulario__imagen">
+            <img class="formulario__grafico" src="build/img/dibujo_repartidor.svg" alt="imagen repartidor" width="500" height="300">
+        </div>
+
+    </section>
+
 </body>
 </html>
