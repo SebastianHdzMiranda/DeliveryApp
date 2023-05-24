@@ -32,22 +32,60 @@
             <h2 class="formulario__heading">Encuentra y Pide comida de tu restaurante favorito</h2>
             <form class="formulario__buscar">
                 <div class="formulario__campo">
-                    <label class="formulario__label" for="restaurante">Restaurant</label>
-                    <input class="formulario__input" type="text" placeholder="Tacos México">
+                    <label for="restaurante" class="formulario__label" for="restaurante">Restaurant</label>
+                    <input id="restaurante" class="formulario__input" type="text" placeholder="Tacos México">
                 </div>
                 <div class="formulario__campo">
-                    <label class="formulario__label" for="Platillo">Platillo</label>
-                    <input class="formulario__input" type="text" placeholder="Pizza, Ensalada, Hamburguesa">
+                    <label for="platillo" class="formulario__label" for="Platillo">Platillo</label>
+                    <input id="platillo" class="formulario__input" type="text" placeholder="Pizza, Ensalada, Hamburguesa">
                 </div>
 
                 <input class="formulario__boton" type="submit" value="Buscar">
             </form>
         </div>
 
-        <div class="formulario__imagen">
-            <img class="formulario__grafico" src="build/img/dibujo_repartidor.svg" alt="imagen repartidor" width="500" height="300">
+        <div class="formulario__imagen-contenedor">
+            <img class="formulario__imagen" src="build/img/dibujo_repartidor.svg" alt="imagen repartidor" width="500" height="300">
         </div>
+    </section>
 
+    <div class="wave">
+        <img class="wave__img" src="build/img/wave.svg" alt="wave" width="500" height="300">
+    </div>
+    <section class="pasos">
+        <div class="pasos__contenido contenedor">
+            <h2 class="pasos__heading">¿Cómo funciona?</h2>
+            <p class="pasos__info">tan fácil como 1,2 y 3</p>
+    
+            <div class="pasos__grid">
+                <div class="pasos__grafico-contenedor">
+                    <picture>
+                        <source srcset="build/img/paso_1.avif" type="image/avif">
+                        <source srcset="build/img/paso_1.webp" type="image/webp">
+                        <source srcset="build/img/paso_1.png" type="image/png">
+                        <img class="pasos__grafico" loading="lazy" src="build/img/paso_1.png" width="500" height="300" alt="paso_1">
+                    </picture>
+                </div>
+    
+                <div class="pasos__grafico-contenedor">
+                    <picture>
+                        <source srcset="build/img/paso_2.avif" type="image/avif">
+                        <source srcset="build/img/paso_2.webp" type="image/webp">
+                        <source srcset="build/img/paso_2.png" type="image/png">
+                        <img class="pasos__grafico" loading="lazy" src="build/img/paso_2.png" width="500" height="300" alt="paso_2">
+                    </picture>
+                </div>
+    
+                <div class="pasos__grafico-contenedor">
+                    <picture>
+                        <source srcset="build/img/paso_3.avif" type="image/avif">
+                        <source srcset="build/img/paso_3.webp" type="image/webp">
+                        <source srcset="build/img/paso_3.png" type="image/png">
+                        <img class="pasos__grafico" loading="lazy" src="build/img/paso_3.png" width="500" height="300" alt="paso_3">
+                    </picture>
+                </div>
+            </div>
+        </div> <!-- contenido -->
     </section>
 
 </body>

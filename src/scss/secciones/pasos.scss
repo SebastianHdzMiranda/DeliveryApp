@@ -1,0 +1,45 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+/* funcionamiento 
+--------------------------------------------------------------------------*/
+.wave{
+    &__img{
+        width: 100%;
+    }
+}
+.pasos{
+    background-color: v.$primario;
+    margin-bottom: v.$separacion;
+    &__contenido{
+
+    }
+    &__heading,&__info{
+        text-align: center;
+        margin: 0;
+        color: v.$blanco;
+    }
+    &__heading{
+    }
+    &__info{
+        margin-bottom: v.$separacion;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    &__grid{
+        @include m.tablet{ 
+            @include m.grid(3, v.$separacion);
+        }
+    }
+    &__grafico-contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    &__grafico{
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.2) rotate(-3deg);
+        }
+    }
+
+}
