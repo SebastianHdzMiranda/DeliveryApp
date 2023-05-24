@@ -1,0 +1,74 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.testimoniales{
+    margin-bottom: v.$separacion;
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 auto;
+        @include m.tablet{ 
+            @include m.grid(5, 2rem);
+        }
+    }
+    
+}
+.testimonial{
+    background-color: v.$secundario;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    color: v.$blanco;
+    @include m.tablet{ 
+        margin-bottom: 0;
+        &--1{
+            grid-column: 1/4;
+        }
+        &--3{
+            grid-column: 5/6;
+            grid-row: 1/3;
+        }
+        &--4{
+            grid-column: 1/3;
+        }
+        &--5{
+            grid-column: 3/5;
+        }
+    }
+    &:last-of-type{
+        margin: 0; 
+    }
+    &__header{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    &__foto{
+        flex-basis: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__autor{
+        color: v.$blanco;
+        font-weight: 700;
+        margin: .5rem 0;
+    }
+    &__texto{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+        padding-left: 3.5rem;
+        position: relative;
+
+        &::before{
+            content: '"';
+            font-size: 10rem;
+            position: absolute;
+            left: 0;
+            top: -4rem;
+            opacity: .2;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+}

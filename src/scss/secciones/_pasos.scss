@@ -11,15 +11,10 @@
 .pasos{
     background-color: v.$primario;
     margin-bottom: v.$separacion;
-    &__contenido{
-
-    }
     &__heading,&__info{
         text-align: center;
         margin: 0;
         color: v.$blanco;
-    }
-    &__heading{
     }
     &__info{
         margin-bottom: v.$separacion;
