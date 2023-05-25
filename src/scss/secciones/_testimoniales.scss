@@ -2,8 +2,7 @@
 @use 'bases/mixins' as m;
 
 .testimoniales {
-    padding: v.$separacion 0;
-
+    margin-bottom: v.$separacion;
     &__heading {
         text-align: center;
     }
