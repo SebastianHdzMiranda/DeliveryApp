@@ -1,0 +1,74 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.restaurantes{
+    margin-bottom: v.$separacion;
+    padding: v.$separacion 0;
+    background-color: v.$grisClaro;
+    &__heading{
+        color: v.$secundario;
+    }
+    &__grid{
+        @include m.tablet{ 
+            @include m.grid(2, v.$separacion);
+        }
+    }
+}
+.restaurante{
+    background-color: v.$blanco;
+    padding: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 25px 1px darken(v.$grisClaro, 20%);
+
+    @include m.tablet{ 
+        margin-bottom: 0;
+    }
+    &__grid{
+        @include m.tablet{ 
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            column-gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        @include m.desktop{ 
+            grid-template-columns: 1fr 3fr;
+            column-gap: 4rem;
+        }
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &__imagen{
+        max-width: 20rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.tablet{ 
+            display: block;
+        }
+    }
+    &__nombre{
+        margin: 1rem 0;
+        font-size: 2.3rem;
+        font-weight: 700;
+        color: v.$primario;
+    }
+    &__info{
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: v.$secundario;
+        text-align: center;
+        @include m.tablet{ 
+            text-align: start;
+        }
+    }
+
+}
+
