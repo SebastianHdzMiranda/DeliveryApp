@@ -19,7 +19,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
-  overflow-x: hidden;
 }
 
 p {
@@ -323,5 +322,89 @@ h3 {
   top: -4rem;
   opacity: 0.2;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.restaurantes {
+  margin-bottom: 5rem;
+  padding: 5rem 0;
+  background-color: #eceeef;
+}
+.restaurantes__heading {
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .restaurantes__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.restaurante {
+  background-color: #FFFFFF;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 25px 1px #b5bcc0;
+}
+@media (min-width: 768px) {
+  .restaurante {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .restaurante__grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurante__grid {
+    grid-template-columns: 1fr 3fr;
+    -webkit-column-gap: 4rem;
+       -moz-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+}
+.restaurante:last-child {
+  margin-bottom: 0;
+}
+.restaurante__imagen {
+  max-width: 20rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.restaurante__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .restaurante__contenido {
+    display: block;
+  }
+}
+.restaurante__nombre {
+  margin: 1rem 0;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #e8505b;
+}
+.restaurante__info {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #455a64;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .restaurante__info {
+    text-align: start;
+  }
 }
 /*# sourceMappingURL=app.css.map */
