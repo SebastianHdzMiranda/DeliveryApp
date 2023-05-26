@@ -1,0 +1,39 @@
+@use 'bases/variables' as v; 
+@use 'bases/mixins' as m;
+
+.repartidor{
+    margin-bottom: v.$separacion;
+    &__heading{
+        color: v.$secundario;
+    }
+    &__grid{
+        @include m.tablet{ 
+            @include m.grid(2, v.$separacion);
+        }
+    }
+    &__img-contenedor{
+
+    }
+    &__img{
+        width: 100%
+    }
+    &__info{
+
+    }
+    &__texto{
+        color: v.$secundario;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+
+        &:last-of-type{
+            margin-bottom: 2rem;
+        }
+    }
+    &__boton{
+        @include m.boton(v.$primario, v.$blanco);
+        @include m.tablet{ 
+            display: inline-block;
+        }
+    }
+
+}

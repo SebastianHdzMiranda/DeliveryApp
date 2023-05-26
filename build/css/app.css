@@ -407,4 +407,139 @@ h3 {
     text-align: start;
   }
 }
+
+.repartidor {
+  margin-bottom: 5rem;
+}
+.repartidor__heading {
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .repartidor__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.repartidor__img {
+  width: 100%;
+}
+.repartidor__texto {
+  color: #455a64;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.repartidor__texto:last-of-type {
+  margin-bottom: 2rem;
+}
+.repartidor__boton {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.repartidor__boton:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .repartidor__boton {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .repartidor__boton {
+    display: inline-block;
+  }
+}
+
+.app {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+.app__grid {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 5rem;
+}
+@media (min-width: 768px) {
+  .app__grid {
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    align-items: center;
+  }
+}
+.app__imagen-contenedor {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .app__imagen-contenedor {
+    grid-row: auto;
+  }
+}
+.app__imagen {
+  width: 20rem;
+  transition: all 0.3s;
+}
+@media (min-width: 768px) {
+  .app__imagen {
+    width: 25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .app__imagen {
+    width: 28rem;
+  }
+}
+.app__imagen:hover {
+  -webkit-transform: scale(1.15) rotate(3deg);
+          transform: scale(1.15) rotate(3deg);
+}
+.app__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__heading {
+  margin-bottom: 0;
+  color: #455a64;
+}
+.app__texto {
+  margin-bottom: 3rem;
+}
+.app__logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 30rem;
+}
+@media (min-width: 768px) {
+  .app__logos {
+    width: 35rem;
+  }
+}
+@media (min-width: 1024px) {
+  .app__logos {
+    gap: 2rem;
+    width: 100%;
+  }
+}
+.app__logo {
+  transition: all 0.5s;
+}
+.app__logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 /*# sourceMappingURL=app.css.map */
