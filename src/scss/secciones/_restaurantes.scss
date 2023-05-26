@@ -1,6 +1,8 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
+/* restaurantes
+--------------------------------------------------------------------------*/
 .restaurantes{
     margin-bottom: v.$separacion;
     padding: v.$separacion 0;

@@ -1,14 +1,17 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
+/* app de comida 
+--------------------------------------------------------------------------*/
 .app{
     background-color: v.$grisClaro;
     padding: v.$separacion 0;
     &__grid{
-        display: grid;
-        grid-template-rows: 1fr auto;
+        display: flex;
+        flex-direction: column-reverse;
         gap: v.$separacion;
         @include m.tablet{ 
+            display: grid;
             gap: 0;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: unset;
@@ -16,10 +19,6 @@
         }
     }
     &__imagen-contenedor{
-        grid-row: 2/3;
-        @include m.tablet{ 
-            grid-row: auto;
-        }
         display: flex;
         justify-content: center;
     }

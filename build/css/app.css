@@ -211,7 +211,7 @@ h3 {
   }
 }
 
-/* funcionamiento 
+/* pasos 
 --------------------------------------------------------------------------*/
 .wave__img {
   width: 100%;
@@ -250,6 +250,8 @@ h3 {
           transform: scale(1.2) rotate(-3deg);
 }
 
+/* testimoniales
+--------------------------------------------------------------------------*/
 .testimoniales {
   margin-bottom: 5rem;
 }
@@ -324,6 +326,8 @@ h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+/* restaurantes
+--------------------------------------------------------------------------*/
 .restaurantes {
   margin-bottom: 5rem;
   padding: 5rem 0;
@@ -408,6 +412,8 @@ h3 {
   }
 }
 
+/* repartidor 
+--------------------------------------------------------------------------*/
 .repartidor {
   margin-bottom: 5rem;
 }
@@ -461,17 +467,20 @@ h3 {
   }
 }
 
+/* app de comida 
+--------------------------------------------------------------------------*/
 .app {
   background-color: #eceeef;
   padding: 5rem 0;
 }
 .app__grid {
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column-reverse;
   gap: 5rem;
 }
 @media (min-width: 768px) {
   .app__grid {
+    display: grid;
     gap: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
@@ -479,14 +488,8 @@ h3 {
   }
 }
 .app__imagen-contenedor {
-  grid-row: 2/3;
   display: flex;
   justify-content: center;
-}
-@media (min-width: 768px) {
-  .app__imagen-contenedor {
-    grid-row: auto;
-  }
 }
 .app__imagen {
   width: 20rem;
@@ -543,6 +546,8 @@ h3 {
           transform: scale(1.2);
 }
 
+/* footer
+--------------------------------------------------------------*/
 .footer {
   background-color: #e8505b;
   padding: 4rem 0 0 0;

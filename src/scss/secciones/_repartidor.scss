@@ -1,6 +1,8 @@
 @use 'bases/variables' as v; 
 @use 'bases/mixins' as m;
 
+/* repartidor 
+--------------------------------------------------------------------------*/
 .repartidor{
     margin-bottom: v.$separacion;
     &__heading{
