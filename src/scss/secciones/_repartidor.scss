@@ -11,14 +11,8 @@
             @include m.grid(2, v.$separacion);
         }
     }
-    &__img-contenedor{
-
-    }
     &__img{
         width: 100%
-    }
-    &__info{
-
     }
     &__texto{
         color: v.$secundario;
